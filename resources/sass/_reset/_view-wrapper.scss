@@ -1,0 +1,29 @@
+/*
+VIEW-WRAPPER
+ */
+
+// ON LOAD PAGE
+.is-load .view-wrapper {
+  visibility: hidden;
+}
+
+.view-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  // min-width: 320px;
+  min-height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  // min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

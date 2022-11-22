@@ -1,0 +1,118 @@
+/*
+RESET STYLES
+ */
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  font-family: $base-font; // (_main/fonts.scss)
+  line-height: $base-line-height; // (_main/view-text.scss)
+  font-size: $base-md-font-size; // (_main/view-text.scss)
+  @media (min-width: 320px) and (max-width: 1024px) {
+    font-size: $base-sm-font-size; // (_main/view-text.scss)
+  }
+  @media (min-width: 1441px) {
+    font-size: $base-lg-font-size; // (_main/view-text.scss)
+  }
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $base-bg; // (_main/main-colors.scss)
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &.is-load {
+    background: $body-load-bg; // (_main/main-colors.scss)
+  }
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+  &::before,
+  &::after {
+    content: '';
+  }
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-width: 0;
+}
+
+td {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea {
+  border-radius: 0;
+  font-family: $main-font;  // (_main/fonts.scss)
+  color: $black;  // (_main/default-colors.scss)
+  outline: none;
+  -webkit-appearance: $webkit-appearance;  // (_main/form.scss)
+  box-shadow: none;
+  @include placeholder($placeholder-color, true);  // mixins in (_functions/placeholder.scss), variables in (_main/form.scss)
+  @include placeholder-on-focus(); // (_functions/placeholder.scss)
+}
+
+input[type="button"], input[type="submit"], button {
+  cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=submit], input[type=button], button {
+  -webkit-appearance: $webkit-appearance; // (_main/form.scss)
+  outline: none;
+}
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+div, span {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}

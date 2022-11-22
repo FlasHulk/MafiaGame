@@ -1,0 +1,19 @@
+/*
+LINKS DECORATION
+ */
+
+/* DEFAULT links color */
+// (_reset/default-text.scss)
+$default-link-color: $black;
+$default-link-color-hover: $black-light;
+$default-link-color-decoration: underline;
+$default-link-color-decoration-hover: none;
+$default-link-transition: none;
+
+/* VIEW-TEXT links color */
+// (_reset/view-text.scss)
+$view-link-color: $black;
+$view-link-color-hover: $black-light;
+$view-link-color-decoration: $black;
+$view-link-color-decoration-hover: none;
+$view-link-transition: $default-transition;

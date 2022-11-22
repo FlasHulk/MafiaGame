@@ -1,0 +1,111 @@
+/*
+DEFAULT TEXT FORMATTING (H1-H6, P, UL/LI/OL, A)
+___
+# variables for H1-H6, P, UL/LI/OL in (_main/default-text.scss)
+# variables for A (links) in (_main/links.scss)
+ */
+
+// DEFAULT CLASSES
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* DEFAULT TITLES */
+
+h1 {
+  // padding: $default-padding-h1;
+  font-family: $default-font-family-h1;
+  font-size: $default-font-size-h1;
+  line-height: $default-line-height-h1;
+  font-weight: $default-font-weight-h1;
+  color: $default-color-h1;
+}
+
+h2 {
+  // padding: $default-padding-h2;
+  font-family: $default-font-family-h2;
+  font-size: $default-font-size-h2;
+  line-height: $default-line-height-h2;
+  font-weight: $default-font-weight-h2;
+  color: $default-color-h2;
+}
+
+h3 {
+  // padding: $default-padding-h3;
+  font-family: $default-font-family-h3;
+  font-size: $default-font-size-h3;
+  line-height: $default-line-height-h3;
+  font-weight: $default-font-weight-h3;
+  color: $default-color-h3;
+}
+
+h4 {
+  // padding: $default-padding-h4;
+  font-family: $default-font-family-h4;
+  font-size: $default-font-size-h4;
+  line-height: $default-line-height-h4;
+  font-weight: $default-font-weight-h4;
+  color: $default-color-h4;
+}
+
+h5 {
+  // padding: $default-padding-h5;
+  font-family: $default-font-family-h5;
+  font-size: $default-font-size-h5;
+  line-height: $default-line-height-h5;
+  font-weight: $default-font-weight-h5;
+  color: $default-color-h5;
+}
+
+h6 {
+  // padding: $default-padding-h6;
+  font-family: $default-font-family-h6;
+  font-size: $default-font-size-h6;
+  line-height: $default-line-height-h6;
+  font-weight: $default-font-weight-h6;
+  color: $default-color-h6;
+}
+
+/* DEFAULT PARAGRAPHS */
+
+p {
+  // padding: $default-padding-p;
+  font-family: $default-font-family-p;
+  font-size: $default-font-size-p;
+  line-height: $default-line-height-p;
+  font-weight: $default-font-weight-p;
+  color: $default-color-p;
+}
+
+ul, li, ol {
+  list-style: $default-list;
+}
+
+// LINKS
+a {
+  text-decoration: $default-link-color-decoration;
+  color: $default-link-color;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: $default-link-transition;
+  &:hover {
+    color: $default-link-color-hover;
+    text-decoration: $default-link-color-decoration-hover;
+  }
+}

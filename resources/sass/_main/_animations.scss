@@ -1,0 +1,13 @@
+/*
+ANIMATIONS
+ */
+
+// PRELOADER
+@keyframes preloader {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

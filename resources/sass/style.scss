@@ -1,0 +1,20 @@
+/*
+INCLUDE ALL SASS FILES
+ */
+
+// CONFIGS
+@import "config"; // include default and main variables
+
+// PRELOADER
+@import "_parts/preloader";
+
+// SECTIONS
+@import "_layouts/view-header"; // HEADER
+@import "_layouts/view-section"; // CONTENT
+@import "_layouts/view-main";
+@import "_layouts/view-footer"; // FOOTER
+
+// PARTS
+@import "_parts/breadcrumbs"; // breadcrumbs
+@import "_parts/buttons"; // buttons
+@import "_parts/pagination"; // pagination

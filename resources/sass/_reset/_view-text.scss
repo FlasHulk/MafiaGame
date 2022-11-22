@@ -1,0 +1,93 @@
+/*
+TEXT FORMATTING in blocks .view-text
+___
+# variables for H1-H6, P, UL/LI/OL in (_main/view-text.scss)
+# variables for A (links) in (_main/links.scss)
+ */
+
+.view-text {
+
+  /* VIEW-TEXT TITLES */
+
+  h1 {
+    padding: $view-padding-h1;
+    font-family: $view-font-family-h1;
+    font-size: $view-font-size-h1;
+    line-height: $view-line-height-h1;
+    font-weight: $view-font-weight-h1;
+    color: $view-color-h1;
+  }
+
+  h2 {
+    padding: $view-padding-h2;
+    font-family: $view-font-family-h2;
+    font-size: $view-font-size-h2;
+    line-height: $view-line-height-h2;
+    font-weight: $view-font-weight-h2;
+    color: $view-color-h2;
+  }
+
+  h3 {
+    padding: $view-padding-h3;
+    font-family: $view-font-family-h3;
+    font-size: $view-font-size-h3;
+    line-height: $view-line-height-h3;
+    font-weight: $view-font-weight-h3;
+    color: $view-color-h3;
+  }
+
+  h4 {
+    padding: $view-padding-h4;
+    font-family: $view-font-family-h4;
+    font-size: $view-font-size-h4;
+    line-height: $view-line-height-h4;
+    font-weight: $view-font-weight-h4;
+    color: $view-color-h4;
+  }
+
+  h5 {
+    padding: $view-padding-h5;
+    font-family: $view-font-family-h5;
+    font-size: $view-font-size-h5;
+    line-height: $view-line-height-h5;
+    font-weight: $view-font-weight-h5;
+    color: $view-color-h5;
+  }
+
+  h6 {
+    padding: $view-padding-h6;
+    font-family: $view-font-family-h6;
+    font-size: $view-font-size-h6;
+    line-height: $view-line-height-h6;
+    font-weight: $view-font-weight-h6;
+    color: $view-color-h6;
+  }
+
+  /* VIEW-TEXT PARAGRAPHS */
+
+  p {
+    padding: $view-padding-p;
+    font-family: $view-font-family-p;
+    font-size: $view-font-size-p;
+    line-height: $view-line-height-p;
+    font-weight: $view-font-weight-p;
+    color: $view-color-p;
+  }
+
+  // LISTS
+  ul, li, ol {
+    list-style: $view-list;
+  }
+
+  // LINKS
+  a {
+    text-decoration: $view-link-color-decoration;
+    color: $view-link-color;
+    transition: $view-link-transition;
+    &:hover {
+      color: $view-link-color-hover;
+      text-decoration: $view-link-color-decoration-hover;
+    }
+  }
+
+}

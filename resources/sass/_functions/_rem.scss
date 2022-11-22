@@ -1,0 +1,15 @@
+/*
+REM FUNCTION
+___
+# variables in (_main/view-text.scss)
+ */
+
+@function rem($pxval, $base: $base-md-font-size) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1rem;
+}

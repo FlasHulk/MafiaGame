@@ -1,0 +1,683 @@
+/*
+INCLUDE ALL SASS FILES
+ */
+/*
+PROJECT CONFIG
+ */
+/*
+MAIN CONFIG (VARIABLES)
+ */
+/*
+FONTS
+ */
+/*
+DEFAULT COLORS
+*/
+/*
+MAIN COLORS
+*/
+/* LOAD PAGE */
+/* MAIN COLORS */
+/*
+TRANSITIONS
+ */
+/*
+LINKS DECORATION
+ */
+/* DEFAULT links color */
+/* VIEW-TEXT links color */
+/*
+DEFAULT TEXT FORMATTING
+___
+# classes in (_reset/default-text)
+ */
+/* DEFAULT TITLES */
+/*
+TEXT FORMATTING IN BLOCKS .VIEW-TEXT
+___
+# classes in (_reset/view-text)
+ */
+/* VIEW-TEXT TITLES */
+/*
+FORM SETTINGS
+ */
+/*
+BUTTONS GEOMETRY
+___
+# class .button in (_parts/buttons.scss)
+*/
+/*
+ANIMATIONS
+ */
+@-webkit-keyframes preloader {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes preloader {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+/*
+FONTS LOOP
+ */
+/*
+PLACEHOLDER FUNCTION
+ */
+/*
+REM FUNCTION
+___
+# variables in (_main/view-text.scss)
+ */
+/*
+RESET STYLES
+ */
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  font-family: "Roboto";
+  line-height: 1;
+  font-size: 14px;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1441px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.is-load {
+  background: #fff;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+blockquote::before, blockquote::after, q::before, q::after {
+  content: "";
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-width: 0;
+}
+
+td {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea {
+  border-radius: 0;
+  font-family: "Roboto";
+  color: #333;
+  outline: none;
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #999;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #999;
+  opacity: 0.5;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #999;
+}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input[type=button], input[type=submit], button {
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]:hover,
+input[type=number]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=submit], input[type=button], button {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+div, span {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration,
+input[type=search]::-ms-clear {
+  display: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/*
+VIEW-WRAPPER
+ */
+.is-load .view-wrapper {
+  visibility: hidden;
+}
+
+.view-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*
+DEFAULT TEXT FORMATTING (H1-H6, P, UL/LI/OL, A)
+___
+# variables for H1-H6, P, UL/LI/OL in (_main/default-text.scss)
+# variables for A (links) in (_main/links.scss)
+ */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* DEFAULT TITLES */
+h1 {
+  font-family: "Roboto";
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+
+h5 {
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+
+h6 {
+  font-family: "Roboto";
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* DEFAULT PARAGRAPHS */
+p {
+  font-family: "Roboto";
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: underline;
+  color: #333;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: none;
+}
+a:hover {
+  color: #888;
+  text-decoration: none;
+}
+
+/*
+TEXT FORMATTING in blocks .view-text
+___
+# variables for H1-H6, P, UL/LI/OL in (_main/view-text.scss)
+# variables for A (links) in (_main/links.scss)
+ */
+.view-text {
+  /* VIEW-TEXT TITLES */
+  /* VIEW-TEXT PARAGRAPHS */
+}
+.view-text h1 {
+  padding: 1rem 0;
+  font-family: "Roboto";
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+.view-text h2 {
+  padding: 1rem 0;
+  font-family: "Roboto";
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+.view-text h3 {
+  padding: 1rem 0;
+  font-family: "Roboto";
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+.view-text h4 {
+  padding: 1rem 0;
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+.view-text h5 {
+  padding: 1rem 0;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+.view-text h6 {
+  padding: 1rem 0;
+  font-family: "Roboto";
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+.view-text p {
+  padding: 1rem 0;
+  font-family: "Roboto";
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+}
+.view-text ul, .view-text li, .view-text ol {
+  list-style: none;
+}
+.view-text a {
+  -webkit-text-decoration: #333;
+          text-decoration: #333;
+  color: #333;
+  transition: all 0.2s linear;
+}
+.view-text a:hover {
+  color: #888;
+  text-decoration: none;
+}
+
+/*
+CLEARFIX STYLE
+ */
+.clearfix::after,
+.container::after,
+.row::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/*
+PRELOADER
+ */
+.preloader-default {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #ccc;
+  border-top-color: coral;
+  border-right-color: coral;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: preloader 1s infinite linear;
+          animation: preloader 1s infinite linear;
+}
+
+.is-load {
+  position: relative;
+}
+.is-load .preloader {
+  display: block;
+}
+
+.view-header {
+  position: relative;
+  width: 100%;
+  order: 1;
+}
+
+.view-section {
+  position: relative;
+  width: 100%;
+  order: 2;
+  flex-grow: 1;
+}
+
+.main-page {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../images/bg-mafia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.main-page .players-role {
+  padding: 50px 15px;
+}
+.main-page .players-role__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.main-page .players-role .add-player, .main-page .players-role .heal-all, .main-page .players-role .reset-role, .main-page .players-role .distribute-roles {
+  max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.main-page .players-role__player-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  counter-reset: item;
+}
+@media screen and (max-width: 1024px) {
+  .main-page .players-role__player-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-page .players-role__player-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.main-page .players-role__player {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  background: #fff;
+}
+.main-page .players-role__player::before {
+  display: inline-block;
+  content: counter(item) ".";
+  counter-increment: item;
+  margin-right: 10px;
+  color: #333;
+}
+.main-page .players-role__player.death {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.main-page .players-role__player input {
+  flex: 4 1;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 5px;
+  margin-right: 15px;
+  font-size: 1em;
+}
+.main-page .players-role__player .player-role {
+  flex: 2 1;
+  position: relative;
+  margin-right: 10px;
+}
+.main-page .players-role__player .player-role p {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #333;
+}
+.main-page .players-role__player .player-role p::before {
+  content: attr(data-role);
+  color: #333;
+}
+.main-page .players-role__player .player-role__list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  background: #fff;
+  z-index: 10;
+}
+.main-page .players-role__player .player-role__list li {
+  cursor: pointer;
+  padding: 5px;
+  border-top: 1px solid #333;
+}
+.main-page .players-role__player .player-role__list li li + li {
+  border-bottom: 1px solid #333;
+}
+.main-page .players-role__player .player-death {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.main-page .players-role__player .delete-player {
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  width: 30px;
+  min-height: 30px;
+  height: 30px;
+  font-size: 30px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+.view-footer {
+  position: relative;
+  width: 100%;
+  order: 3;
+}
+
+/*
+BUTTONS STYLES
+ */
+.btn {
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map*/

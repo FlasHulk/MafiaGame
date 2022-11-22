@@ -1,0 +1,76 @@
+/*
+DEFAULT TEXT FORMATTING
+___
+# classes in (_reset/default-text)
+ */
+
+// COLORS
+$default-title-color: #fff; // Color of headings H1-H6
+$default-text-color: #fff; // Color of paragraphs
+
+// DEFAULT LISTS STYLE
+$default-list: none; // Style type of lists
+
+/* DEFAULT TITLES */
+
+$base-line-height: 1;
+
+// H1
+$default-padding-h1: 1rem 0;
+$default-font-family-h1: $main-font;
+$default-font-size-h1: 3rem;
+$default-line-height-h1: 1;
+$default-font-weight-h1: 700;
+$default-color-h1: $default-title-color;
+
+// H2
+$default-padding-h2: 1rem 0;
+$default-font-family-h2: $main-font;
+$default-font-size-h2: 2.5rem;
+$default-line-height-h2: 1;
+$default-font-weight-h2: 700;
+$default-color-h2: $default-title-color;
+
+// H3
+$default-padding-h3: 1rem 0;
+$default-font-family-h3: $main-font;
+$default-font-size-h3: 2rem;
+$default-line-height-h3: 1;
+$default-font-weight-h3: 700;
+$default-color-h3: $default-title-color;
+
+// H4
+$default-padding-h4: 1rem 0;
+$default-font-family-h4: $main-font;
+$default-font-size-h4: 1.5rem;
+$default-line-height-h4: 1;
+$default-font-weight-h4: 700;
+$default-color-h4: $default-title-color;
+
+// H5
+$default-padding-h5: 1rem 0;
+$default-font-family-h5: $main-font;
+$default-font-size-h5: 1.2rem;
+$default-line-height-h5: 1;
+$default-font-weight-h5: 700;
+$default-color-h5: $default-title-color;
+
+// H6
+$default-padding-h6: 1rem 0;
+$default-font-family-h6: $main-font;
+$default-font-size-h6: 1rem;
+$default-line-height-h6: 1;
+$default-font-weight-h6: 700;
+$default-color-h6: $default-title-color;
+
+// P
+$default-padding-p: 1rem 0;
+$default-font-family-p: $main-font;
+$default-font-size-p: 1rem;
+$default-line-height-p: 1;
+$default-font-weight-p: 400;
+$default-color-p: $default-text-color;
+
+
+
+

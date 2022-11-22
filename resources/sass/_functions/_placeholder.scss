@@ -1,0 +1,24 @@
+/*
+PLACEHOLDER FUNCTION
+ */
+
+@mixin placeholder($placeholder-color, $changeOpacity: false) {
+  &::-webkit-input-placeholder {
+    color: $placeholder-color;
+  }
+  &::-moz-placeholder {
+    color: $placeholder-color;
+    @if $changeOpacity {
+      opacity: .5;
+    }
+  }
+  &:-ms-input-placeholder {
+    color: $placeholder-color;
+  }
+}
+
+@mixin placeholder-on-focus($placeholder-color: transparent) {
+  &:focus {
+    @include placeholder($placeholder-color);
+  }
+}

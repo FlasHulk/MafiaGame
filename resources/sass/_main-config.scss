@@ -1,0 +1,15 @@
+/*
+MAIN CONFIG (VARIABLES)
+ */
+
+@import "_main/fonts"; // include fonts
+@import "_main/default-colors"; // default colors in all projects
+@import "_main/main-colors"; // color for the project
+@import "_main/transition"; // variables for transition
+@import "_main/links"; // styles for default links and for links in block .view-text
+@import "_main/default-text"; // default styles for formatting text
+@import "_main/view-text"; // styles for formatting text in block .view-text
+@import "_main/form"; // styles for form, input, textarea
+@import "_main/buttons-geometry"; // buttons geometry
+@import "_main/animations"; // animations for the project
+@import "_sprite/sprite"; // sprite from png icons
